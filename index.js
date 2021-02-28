@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-const command = require('./Commands/command')
+const command = require('./Commands/command.js')
 
 client.once('ready', () => {
    console.log('[INFO] TurtleBot has started');
