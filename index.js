@@ -6,7 +6,7 @@ client.once('ready', () => {
    console.log('[INFO] TurtleBot has started');
    client.user.setActivity("Hello! 💥")
 });
-client.login(config.BOT_TOKEN);
+client.login(process.env.TOKEN);
 
 client.on("message", message => {
     switch (message.content)
