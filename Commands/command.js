@@ -1,4 +1,4 @@
-const {BOT_PREFIX}  = require(process.env.PREFIX)
+const {BOT_PREFIX}  = "!"
 
 module.exports = (client, aliases, callback) => 
 {
@@ -12,10 +12,10 @@ module.exports = (client, aliases, callback) =>
     {
         const { content } = message;
         
-        aliases.array.forEach(alias => {
+        aliases.forEach(alias => {
             const command = `${BOT_PREFIX}${alias}`
 
-            if(content.startWith(`${command}`) ||content === command )
+            if(content.startsWith(`${command} `) ||content === command )
             {
                 callback(message)
             }
