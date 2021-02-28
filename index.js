@@ -7,7 +7,7 @@ client.once('ready', () => {
    console.log('[INFO] TurtleBot has started');
    client.user.setActivity("Hello! 💥")
 
-   command(client, 'pressbutton', (message) => {message.channel.send(message.user.username+" is death because <@592776641827307525> as exploded")})
+   command(client, 'pressbutton', (message) => {message.channel.send("Hello! 💥")})
 });
 client.login(config.BOT_TOKEN);
 
